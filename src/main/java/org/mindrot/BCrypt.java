@@ -743,7 +743,7 @@ public final class BCrypt {
 		 * @return	an array containing the decoded bytes
 		 * @throws IllegalArgumentException if maxolen is invalid
 		 */
-		public static byte[] decode(String s, int maxolen) throws IllegalArgumentException {
+		public static byte[] decode(String s, int maxolen) {
 			StringBuilder rs = new StringBuilder();
 			int off = 0, slen = s.length(), olen = 0;
 			byte[] ret;
